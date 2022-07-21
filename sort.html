@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sorting Array</title>
+    <style>
+        *{
+            margin: 0%;padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgba(101, 255, 255, 0.607);
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+        h1{
+            font-family: cursive;
+            font-size: 10vh;
+            margin-bottom: 5vh;
+        }
+        h2{
+            font-family: cursive;
+            font-size: 6vh;
+            margin-bottom: 1vh;
+        }
+        input{
+            width: 15vh;
+            height: 6vh;
+            display: block;
+            margin: 1vh auto;
+            margin-bottom: 2vh;
+            font-size: 4vh;
+        }
+        h3{
+            margin-top: 4vh;
+            font-size: 3vh;
+        }
+        .display{
+            border: 4px solid black;
+            height: 15vh;
+            width: 50vw;
+            display: inline-block;
+            background-color: rgba(255, 154, 170, 0.715);
+            font-size: 5vh;
+        }
+        button{
+            width: 15vh;
+            height: 5vh;
+            font-size: 2.5vh;
+            padding: 0vh auto;
+            margin: 2vh;
+        }
+    </style>
+</head>
+<body class="container">
+        <h1>Sort Your Array Here</h1>
+        <h2>Unsorted Array</h2>
+        <div class="display" id="unsortarray">[]</div>
+        <h3>Input Element</h3>
+        <input type="text" id="input">
+        <div class="btn">
+            <button id="add">ADD</button>
+            <button id="sort">SORT</button>
+            <button id="reset">RESET</button>
+        </div>
+        <h2>Sorted Array</h2>
+        <div class="display" id="sortarray">[]</div>
+        <script src="sort.js"></script>
+</body>
+</html>

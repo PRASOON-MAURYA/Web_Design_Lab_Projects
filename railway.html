@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Booking</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            font-size: large;
+            font-weight: 550;            
+        }
+        h1 {
+            font-size: 8vh;
+            text-align: center;
+            margin-bottom: 8vh;
+            margin-top: 4vh;
+            padding-bottom: 1vh;            
+            font-weight: 550;
+            font-family: cursive;
+            background-color: rgba(255, 160, 238, 0.582);              
+        }
+        h2{
+            margin-top: 3vh;
+        background-color: rgba(255, 160, 238, 0.582);      
+            margin-bottom: 1vh;
+            border-bottom: 2px solid black;
+            text-align: center;
+            padding-bottom: 1vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .left {
+            width: 40vw;
+            height: 100vh;
+            background-color: rgba(177, 50, 255, 0.817);      
+        }        
+        .right {
+            height: 92vh;
+            width: 60vw;
+            padding: 4vh;
+            background-color: rgba(253, 53, 216, 0.582);             
+        }
+        .img {
+            width: 40vw;
+            height: 50vh;
+            background: url("railway.jpg");
+            background-size: contain, cover;
+            background-repeat: no-repeat;
+        }
+        .blue{
+            background-color: rgba(66, 116, 244, 0.822);
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+            height: 4vh;
+            width: auto;
+            padding-left: 2vh;
+            padding-right: 2vh;
+        }
+        .green{
+                background-color: rgba(41, 182, 13, 0.897);
+                margin-top: 2vh;
+                margin-bottom: 1vh;
+                height: 4vh;
+                width: auto;
+                padding-left: 2.5vh;
+                padding-right: 2.5vh;                
+        }
+        .red{
+            background-color: rgba(219, 55, 55, 0.897);
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+            height: 4vh;
+            width: auto;
+            padding-left: 1.5vh;
+            padding-right: 1.5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left box">
+
+            <h1> Railway Reservation System </h1>
+            <div class="img"></div>
+            <h2 style="font-size:3.5vh ;">Wishing You a Happy and Safe Journey</h2>
+        </div>
+        <div class=" right box">
+            <form action=""></form>
+
+            <table>
+                <tr>
+                    <td>
+                        <h2 style="font-size:5vh ;">Passenger's Detail</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Train No./Name</td>
+                    <td><input type=" text" name="trainno.">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Journey</td>
+                    <td><input type="date" name="date" ></td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td><select name="class">
+                            <option value="-1" selected>select</option>
+                            <option value="SL">SL</option>
+                            <option value="3A">3A</option>
+                            <option value="2A">2A</option>
+                            <option value="1A">1A</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>No. of Seats</td>
+                    <td><select name="No. of seats">
+                            <option value="-1" selected>select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Starting From:</td>
+                    <td><input type="text" name="" ></td>
+                </tr>
+                <tr>
+                    <td>To:</td>
+                    <td><input type="text" name="text2"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Boarding at:</td>
+                    <td><input type="text" name="" ></td>
+                </tr>
+                <tr>
+                    <td>Reservation upto:</td>
+                    <td><input type="text" name="text"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>S.No</td>
+                    <td>Passenger Name</td>
+                    <td>Age</td>
+                    <td>Gender</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td><input type="text" name="p" size="30"></td>
+                    <td><input type="text" name="age" size="2"></td>
+                    <td><select name="gender">
+                        <option value="-1" selected>select</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>2.</td>                    
+                    <td><input type="text" name="p" size="30"></td>                    
+                    <td><input type="text" name="age" size="2"></td>                    
+                    <td><select name="gender">                        
+                        <option value="-1" selected>select</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><button class="blue">Add Passenger</button></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td colspan="2"><input type="text" name="address" id="address" size="30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Pincode: *
+                    <td><input type="text" name="p3" size="30"></p>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>
+                        <h2 style="font-size:4vh ;">Payment Details</h2>
+                    </td>
+                </tr>
+                <td>Payment mode:</td>
+                <td>
+                    <input type="radio" name="payment" value="cc" />Credit Card <br />
+                    <input type="radio" name="payment" value="dc" />Debit card <br />
+                    <input type="radio" name="payment" value="wallet">wallet<br />
+                </td>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="" placeholder="example@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td>Mobile No:</td>
+                    <td><input type="text" name="" placeholder="Contact No."></td>
+                </tr>
+                <tr>
+                    <td><input class="blue" type="reset"></td>
+                    <td><input class="green" type="submit" ></td>
+                    <td><input class="red" type="submit" value="Cancel"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

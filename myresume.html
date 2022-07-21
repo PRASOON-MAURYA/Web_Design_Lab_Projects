@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .left {
+            height: 100vh;
+            width: 30vw;
+            background-color: aqua;
+            font-family: cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .right {
+            height: 100vh;
+            background-color: rgb(239, 132, 255);
+            display: block;
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+        .photo {
+            border-radius: 50%;
+            margin-top: 7vh;
+            margin-bottom: 3vh;
+            height: 30vh;
+            width: 30vh;
+            background: url("photo.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1{
+            font-size: 5vh;
+        }
+        h2{
+            font-size: 4vh;
+        }
+        h3 {
+            font-size: 3vh;
+            margin-top: 2vh;
+        }
+        ul {
+            list-style: none;
+            /* border: 2px solid rgb(255, 0, 217); */
+            text-align: center;
+            margin-bottom: 3vh;
+            margin-top: 3vh;
+            font-family: cursive;
+        }
+        li {
+            display: inline;
+        }        
+        li a {
+            border: 4px solid blue;
+            border-radius: 3vh;
+            background-color: aqua;
+            color: rgb(255, 0, 195);
+            padding-left: 4vh;            
+            padding-right: 4vh;            
+            text-decoration: none;
+            font-size: 3vw;
+            margin: .5vw;
+        }
+        .head {
+            font-size: 10vh;
+            font-style: oblique;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 6vh;
+            margin-bottom: 2vh;
+            text-align: center;
+            border-bottom: 5px double black;
+            border-top: 5px double black;
+        }
+        .details{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        .detail {
+            border: 4px solid rgb(145, 18, 255);
+            background-color: rgb(154, 225, 255);
+            border-radius: 4vh;
+            box-shadow: 2vh;
+            margin: 1vh;
+            padding: 2vw;
+            /* width: 15vw; */
+            box-shadow: rgba(255, 12, 243, 0.884) 0px 5px 15px;
+        }
+        .detail span {
+            font-size: 3vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+        .detail p {
+            margin-bottom: 2vh;
+            font-size: 2.5vh;
+        }
+        .thought{
+            font-size: 5vh;
+            text-align: center;
+            margin-top: 4vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            color: rgb(0, 255, 255);
+            text-shadow: 2px 2px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="photo"></div>
+            <h1>PRASOON MAURYA</h1><br>
+            <section id="contact">
+                <div class="contact">
+                    <h2 style="text-align: center;"><u>Contact</u></h2>
+                    <h3>Email ID-</h3><span>prasoondss1829@gmail.com</span>
+                    <hr>
+                    <h3>LinkedIn-</h3><a
+                        href="https://www.linkedin.com/in/prasoon-maurya/">https://www.linkedin.com/in/prasoon-maurya/</a>
+                    <hr>
+                    <h3>CodeChef-</h3><a
+                        href="https://www.codechef.com/users/chakra1829">https://www.codechef.com/users/chakra1829</a>
+                    <hr>
+                    <h3>GitHub Link-</h3> <a
+                        href="https://github.com/PRASOON-MAURYA">https://github.com/PRASOON-MAURYA</a>
+                    <hr>
+                </div>
+            </section>
+        </div>
+        <div class="right">
+            <div class="head">RESUME</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero" data-after="Home">Home</a></li>
+                    <li><a href="#hero" data-after="Home">Print</a></li>
+                    <li><a href="#hero" data-after="Home">Contact</a></li>
+                    <li><a href="#hero" data-after="Home">More Projects</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="details">
+                <div class="detail">
+                    <h2 style="font-size: 4vh;margin-bottom: 1vh;"><u>PROFILE</u></h2>
+                    <span>Name-</span>
+                    <p>Prasoon Maurya</p>
+                    <span>Nationality-</span>
+                    <p>Indian</p>
+                    <span>Religion-</span>
+                    <p>Hindu</p>
+                    <span>DOB-</span>
+                    <p>29/01/2001</p>
+                </div>
+                <div class="detail">
+                    <h2 style="font-size: 4vh;margin-bottom: 1vh;"><u>ACEDEMIC DETAILS</u></h2>
+                    <span>(10+2) Marks-</span>
+                    <p>85% +</p>
+                    <span>B.Tech-</span>
+                    <p><b>I Year- </b>8.7 CGPA <br><b>II Year- </b>8 CGPA</p>
+                </div>
+                <div class="detail">
+                    <h2 style="font-size: 4vh;margin-bottom: 1vh;"><u>LANGUAGE</u></h2>
+                    <span>SPEAKING- </span>
+                    <p><b> >> </b> Hindi <br> <b> >> </b> English</p>
+                    <span>Programming-</span>
+                    <p><b> >> </b> C/C++ <br> <b> >> </b> HTML <br> <b> >> </b> CSS <br> <b> >> </b> JavaScript <br> <b> >> </b> Python <br> 
+                </div>
+                <div class="detail">
+                    <h2 style="font-size: 4vh;margin-bottom: 1vh;"><u>PROJECTS</u></h2>
+                    <span>Code Runner-</span>
+                    <p>Used to run small HTML codes on site.</p>
+                    <span>Pendulum Clock-</span>
+                    <p>Build using pure HTML and CSS.</p>
+                    <span>Calculator-</span>
+                    <p>Coded after having basic knowledge about JavaScript.</p>
+                </div>
+            </div>
+            <div class="thought">"Practical is better then Theory"</div>
+</body>
+</html>

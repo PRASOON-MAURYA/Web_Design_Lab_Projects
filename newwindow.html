@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Window</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: rgba(101, 255, 255, 0.607);
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: cursive;
+            font-size: 8vh;
+            margin-top: 20vh;
+            margin-bottom: 5vh;
+        }
+
+        button {
+            width: auto;
+            height: auto;
+            font-size: 4vh;
+            padding: 2vh 8vh;
+            margin: 2vh;
+            border: 5px solid black;
+            border-radius: 4vh;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>CLICK TO OPEN NEW WINDOW</h1>
+
+    <button onclick="func()">Click to open GitHub Website</button>
+</body>
+<script>
+    function func() {
+        window.open("https://github.com/", '_blank')
+    }
+</script>
+</body>
+
+</html>
